@@ -1,14 +1,16 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-canary: oklch(92.04% 0.1687 105.99);
+  --color-background-light: oklch(100% 0 0);
+  --color-background-dark: oklch(14.48% 0 0);
+  --color-foreground-light: oklch(94.61% 0 0);
+  --color-foreground-dark: oklch(20.46% 0 0);
+  --font-gabarito: "Gabarito", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 html,
 body {
@@ -19,24 +21,8 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gabarito", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

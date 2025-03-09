@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function AboutHeader() {
   return (
     <section className="flex flex-col items-center justify-center gap-6 px-4 md:px-8 lg:px-12 py-20 md:py-32">

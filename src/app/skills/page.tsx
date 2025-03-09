@@ -1,3 +1,9 @@
+import SkillsHeader from "@/blocks/skills/header";
+
 export default function Page() {
-  return <main>Coming Soon</main>;
+  return (
+    <main>
+      <SkillsHeader />
+    </main>
+  );
 }

@@ -39,7 +39,7 @@ import { TbApi } from "react-icons/tb";
 
 export default function SkillsHeader() {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 py-20 md:py-32 text-center">
+    <section className="px-6 md:px-12 lg:px-24 py-20 md:py-32 text-center">
       <h2 className="text-4xl font-bold mb-6">My Tech Stack & Expertise</h2>
       <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
         I specialize in building scalable and high-performance applications

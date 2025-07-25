@@ -1,11 +1,14 @@
 "use client";
 
+import SectionWrapper from "@/components/section-wrapper";
 import { useAnimate } from "motion/react";
+import Link from "next/link";
 import { IconType } from "react-icons";
 import {
   SiCss3,
   SiDocker,
   SiExpress,
+  SiFastify,
   SiFramer,
   SiGit,
   SiGithub,
@@ -37,22 +40,22 @@ import {
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
-export default function SkillsHeader() {
+export default function SkillsList() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-20 md:py-32 text-center">
-      <h2 className="text-4xl font-bold mb-6">My Tech Stack & Expertise</h2>
-      <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+    <SectionWrapper>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
+        My Tech Stack & Expertise
+      </h2>
+      <p className="text-black dark:text-gray-200 mt-3 text-base font-light">
         I specialize in building scalable and high-performance applications
         using modern web technologies. Here’s a preview of my key skills and
         tools:
       </p>
 
-      <div className=" px-4 py-12">
-        <div className="mx-auto max-w-7xl">
-          <ClipPathLinks />
-        </div>
+      <div className="mt-10">
+        <ClipPathLinks />
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 
@@ -80,8 +83,9 @@ const ClipPathLinks = () => {
         <LinkBox Icon={SiRadixui} href="#" />
         <LinkBox Icon={SiMaterialdesign} href="#" />
       </div>
-      <div className="grid grid-cols-2 divide-x divide-neutral-900 dark:divide-neutral-100">
+      <div className="grid grid-cols-3 divide-x divide-neutral-900 dark:divide-neutral-100">
         <LinkBox Icon={SiNodedotjs} href="#" />
+        <LinkBox Icon={SiFastify} href="#" />
         <LinkBox Icon={SiExpress} href="#" />
       </div>
       <div className="grid grid-cols-5 divide-x divide-neutral-900 dark:divide-neutral-100">
@@ -188,7 +192,7 @@ const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
   };
 
   return (
-    <a
+    <Link
       href={href}
       onMouseEnter={(e) => {
         handleMouseEnter(e);
@@ -209,6 +213,6 @@ const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
-    </a>
+    </Link>
   );
 };

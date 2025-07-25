@@ -1,9 +1,9 @@
-import SkillsHeader from "@/blocks/skills/header";
+import SkillsList from "@/blocks/skills/skills-list";
 
 export default function Page() {
   return (
     <main>
-      <SkillsHeader />
+      <SkillsList />
     </main>
   );
 }

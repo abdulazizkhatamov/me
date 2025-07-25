@@ -11,8 +11,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute w-full bg-transparent">
-      <div className="max-w-7xl w-full mx-auto flex justify-between items-center p-5">
+    <nav className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-sm">
+      <div className="max-w-7xl w-full mx-auto px-4 md:px-8 lg:px-0 flex justify-between items-center py-5">
         {/* Logo */}
         <div>
           <Link href={"/"}>

@@ -141,7 +141,7 @@ const EXIT_KEYFRAMES: KeyframeMap = {
 const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
   const [scope, animate] = useAnimate();
 
-  const getNearestSide = (e: MouseEvent) => {
+  const getNearestSide = (e: React.MouseEvent) => {
     const box = (e.target as HTMLElement).getBoundingClientRect();
 
     const proximityToLeft = {
@@ -171,7 +171,7 @@ const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
     return sortedProximity[0].side;
   };
 
-  const handleMouseEnter = (e: MouseEvent) => {
+  const handleMouseEnter = (e: React.MouseEvent) => {
     const side = getNearestSide(e);
 
     animate(scope.current, {
@@ -179,7 +179,7 @@ const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
     });
   };
 
-  const handleMouseLeave = (e: MouseEvent) => {
+  const handleMouseLeave = (e: React.MouseEvent) => {
     const side = getNearestSide(e);
 
     animate(scope.current, {

@@ -1,17 +1,35 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import React from "react";
 import { FlipText } from "./motions";
 import { ThemeSwitcher } from "./theme-provider";
 import { motion } from "framer-motion";
 import { Cross2Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import clsx from "clsx";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-sm">
+    <nav
+      className={clsx(
+        "fixed top-0 z-50 w-full transition-all duration-300",
+        scrolled
+          ? "backdrop-blur-sm bg-white/70 dark:bg-black/30"
+          : "bg-transparent"
+      )}
+    >
       <div className="max-w-7xl w-full mx-auto px-4 md:px-8 lg:px-0 flex justify-between items-center py-5">
         {/* Logo */}
         <div>

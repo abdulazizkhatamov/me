@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-canary: oklch(92.04% 0.1687 105.99);
@@ -9,8 +11,6 @@
   --color-foreground-dark: oklch(20.46% 0 0);
   --font-gabarito: "Gabarito", sans-serif;
 }
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 html,
 body {
@@ -26,3 +26,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.swiper-pagination-bullet {
+  background-color: var(--color-foreground-dark) !important;
+
+  @variant dark {
+    background-color: var(--color-foreground-light) !important;
+  }
+}

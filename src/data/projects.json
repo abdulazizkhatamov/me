@@ -1,0 +1,70 @@
+[
+  {
+    "id": "pharm-logistic",
+    "title": "Pharm Logistic",
+    "subtitle": "International Pharmaceutical Ordering Platform",
+    "description": "Pharm Logistic is an online platform that connects customers in Uzbekistan with certified pharmaceutical products from international suppliers. The website provides a clear product catalog, transparent ordering process, and ensures delivery of authentic medicines directly to the country.",
+    "techStack": ["TypeScript", "Next.js", "Tailwind CSS"],
+    "features": [
+      "User-friendly product catalog with detailed descriptions",
+      "Clean, responsive, and multilingual interface",
+      "SEO-optimized for local and regional reach"
+    ],
+    "liveUrl": "https://pharm-logistic.com",
+    "githubUrl": null,
+    "year": 2025,
+    "role": "Frontend Developer",
+    "duration": "3 weeks"
+  },
+  {
+    "id": "chowgo",
+    "title": "ChowGo",
+    "subtitle": "Automated Fast Food Ordering & Delivery App",
+    "description": "ChowGo is a fast and intuitive web app that allows users to place food orders from nearby restaurants with minimal input. It integrates geolocation, payment gateways, and live delivery tracking to optimize the ordering process.",
+    "techStack": ["React", "Fastify", "PostgreSQL", "Tailwind CSS"],
+    "features": [
+      "Instant ordering with pre-configured user preferences",
+      "Live order tracking with delivery ETA",
+      "Admin dashboard for restaurant partners"
+    ],
+    "liveUrl": "https://chowgo.vercel.app",
+    "githubUrl": "https://github.com/yourusername/chowgo",
+    "year": 2025,
+    "role": "Full Stack Developer",
+    "duration": "1.5 months"
+  },
+  {
+    "id": "devfolio",
+    "title": "DevFolio",
+    "subtitle": "Personal Portfolio & Blog Platform",
+    "description": "DevFolio is a clean and performant personal site template for developers and freelancers. It includes a blog system, project showcase, dark/light theme toggle, and multi-language support.",
+    "techStack": ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
+    "features": [
+      "Dynamic blog system powered by MDX",
+      "Fully responsive and theme-aware layout",
+      "Language switcher for i18n support"
+    ],
+    "liveUrl": "https://devfolio.example.com",
+    "githubUrl": "https://github.com/yourusername/devfolio",
+    "year": 2024,
+    "role": "Full Stack Developer",
+    "duration": "2 weeks"
+  },
+  {
+    "id": "taskforge",
+    "title": "TaskForge",
+    "subtitle": "Team Collaboration & Task Management Tool",
+    "description": "TaskForge is a modern Kanban-based task management system for small teams. It features drag-and-drop functionality, real-time updates with websockets, and role-based permissions.",
+    "techStack": ["Vue.js", "Node.js", "MongoDB", "Socket.io"],
+    "features": [
+      "Drag-and-drop task board with multiple views",
+      "Real-time collaboration using websockets",
+      "User authentication with RBAC (Role-Based Access Control)"
+    ],
+    "liveUrl": "https://taskforge.app",
+    "githubUrl": "https://github.com/yourusername/taskforge",
+    "year": 2024,
+    "role": "Frontend Developer",
+    "duration": "4 weeks"
+  }
+]

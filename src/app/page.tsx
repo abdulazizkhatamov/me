@@ -24,12 +24,12 @@ export default function Home() {
         </div>
 
         <div className="flex gap-3">
-          <Link href="download">
+          <Link href="/cv.pdf" target="_blank">
             <Button asChild variant="primary" icon={<DownloadIcon />}>
               Download CV
             </Button>
           </Link>
-          <Link href="github">
+          <Link href="https://github.com/abdulazizkhatamov" target="_blank">
             <Button asChild variant="outline" icon={<GitHubLogoIcon />}>
               GitHub
             </Button>

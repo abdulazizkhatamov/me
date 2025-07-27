@@ -46,7 +46,7 @@ export default function Navbar() {
             { label: "Projects", path: "/projects" },
             { label: "Experience", path: "/experience" },
             { label: "Testimonials", path: "/testimonials" },
-            { label: "Blog", path: "/blog" },
+            // { label: "Blog", path: "/blog" },
             { label: "Contact", path: "/contact" },
           ].map((item) => (
             <Link
@@ -99,7 +99,7 @@ export default function Navbar() {
               { label: "Projects", path: "/projects" },
               { label: "Experience", path: "/experience" },
               { label: "Testimonials", path: "/testimonials" },
-              { label: "Blog", path: "/blog" },
+              // { label: "Blog", path: "/blog" },
               { label: "Contact", path: "/contact" },
             ].map((item) => (
               <Link

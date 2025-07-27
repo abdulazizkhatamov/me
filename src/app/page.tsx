@@ -1,3 +1,4 @@
+import { Button } from "@/components/button";
 import { DownloadIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -23,19 +24,15 @@ export default function Home() {
         </div>
 
         <div className="flex gap-3">
-          <Link
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-900 text-white dark:bg-gray-800 hover:bg-gray-700 transition"
-            href="download"
-          >
-            <DownloadIcon width={20} height={20} />
-            Download CV
+          <Link href="download">
+            <Button asChild variant="primary" icon={<DownloadIcon />}>
+              Download CV
+            </Button>
           </Link>
-          <Link
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-900 text-white dark:bg-gray-800 hover:bg-gray-700 transition"
-            href="github"
-          >
-            <GitHubLogoIcon width={20} height={20} />
-            GitHub
+          <Link href="github">
+            <Button asChild variant="outline" icon={<GitHubLogoIcon />}>
+              GitHub
+            </Button>
           </Link>
         </div>
       </section>

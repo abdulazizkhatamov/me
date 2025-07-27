@@ -4,9 +4,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
-  title: "Abdulaziz Khatamov",
+  title: "Abdulaziz Khatamov | Full Stack Web Developer",
   description:
-    "Talented freelancer from Uzbekistan with over 4 years of experience in full-stack development",
+    "Experienced full stack JavaScript developer specializing in React, Next.js, Node.js, and scalable web solutions.",
 };
 
 export default function RootLayout({

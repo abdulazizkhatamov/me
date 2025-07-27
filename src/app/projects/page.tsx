@@ -28,7 +28,7 @@ export default function Page() {
   };
 
   return (
-    <div className="w-screen min-h-screen">
+    <div className="w-screen min-h-screen py-10 md:py-0">
       <Swiper
         centeredSlides
         autoplay={{
@@ -42,7 +42,7 @@ export default function Page() {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
-            <div className="w-full min-h-screen bg-cover bg-center relative flex items-center justify-start">
+            <div className="w-full min-h-screen relative flex items-center justify-start">
               <div className="absolute inset-0 backdrop-blur-sm" />
 
               <div className="relative z-10 max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-0">

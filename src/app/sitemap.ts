@@ -5,43 +5,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: "https://www.abdulazizkhatamov.com",
+      url: "https://www.abdulazizkhatamov.xyz",
       lastModified,
       changeFrequency: "yearly",
       priority: 1.0,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/about",
+      url: "https://www.abdulazizkhatamov.xyz/about",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/skills",
+      url: "https://www.abdulazizkhatamov.xyz/skills",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/projects",
+      url: "https://www.abdulazizkhatamov.xyz/projects",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/experience",
+      url: "https://www.abdulazizkhatamov.xyz/experience",
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/testimonials",
+      url: "https://www.abdulazizkhatamov.xyz/testimonials",
       lastModified,
       changeFrequency: "yearly",
       priority: 0.6,
     },
     {
-      url: "https://www.abdulazizkhatamov.com/contact",
+      url: "https://www.abdulazizkhatamov.xyz/contact",
       lastModified,
       changeFrequency: "yearly",
       priority: 0.5,

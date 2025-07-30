@@ -15,5 +15,24 @@
     "year": 2025,
     "role": "Frontend Developer",
     "duration": "3 weeks"
+  },
+  {
+    "id": "trivia-quiz-app",
+    "title": "Trivia Quiz App",
+    "subtitle": "Interactive Trivia Game with Timer & Score",
+    "description": "A fun and challenging trivia quiz web app where users can test their knowledge across different categories and difficulty levels. Features include real-time countdown, score tracking, answer review, and PWA support for installability.",
+    "techStack": ["TypeScript", "React", "Tailwind CSS", "TanStack Router"],
+    "features": [
+      "Dynamic quiz generation with category, difficulty, and type filters",
+      "Timer-based gameplay with automatic score calculation",
+      "Results review with correct answers and explanations",
+      "Mobile-first responsive UI with dark mode",
+      "Installable as a Progressive Web App (PWA)"
+    ],
+    "liveUrl": "https://portfolio-quizapp-git-main-abdulazizkhfs-projects.vercel.app/",
+    "githubUrl": "https://github.com/abdulazizkhatamov/portfolio-quizapp",
+    "year": 2025,
+    "role": "Fullstack Developer",
+    "duration": "2 days"
   }
 ]
